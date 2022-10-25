@@ -566,6 +566,14 @@ installed_plugins: Dict[str, PluginTestTemplate] = {
         }
     ),
 
+    "tracardi.process_engine.action.v1.converters.base64.encode.plugin": PluginTestTemplate(
+        init={
+            'to_base64': '',
+            'input_encoding': '',
+        },
+        resource=None,
+    ),
+
 }
 
 # Plugins only for testing

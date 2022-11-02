@@ -622,6 +622,31 @@ installed_plugins: Dict[str, PluginTestTemplate] = {
         init={"data": "event@properties.list_of_something", "direction": "asc"},
         resource=None
     ),
+
+    "tracardi.process_engine.action.v1.connectors.github.issues.list.plugin": PluginTestTemplate(
+        init={
+            'resource': {
+                'id': '',
+                'name': '',
+            },
+            'timeout': 0,
+            'issue_id': '',
+        },
+        resource=None,
+    ),
+
+    "tracardi.process_engine.action.v1.connectors.github.issues.get.plugin": PluginTestTemplate(
+        init={
+            'resource': {
+                'id': '',
+                'name': '',
+            },
+            'timeout': 0,
+            'issue_id': '',
+        },
+        resource=None,
+    ),
+
 }
 
 # Plugins only for testing
